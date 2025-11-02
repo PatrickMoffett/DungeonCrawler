@@ -3,7 +3,7 @@ name: Build project
 on:
   push:
     branches:
-      - 'release/itch'
+      - 'release/testpage'
 
 jobs:
   buildForAllSupportedPlatforms:
@@ -60,7 +60,7 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: ${{ matrix.channel }}
-          ITCH_GAME: solarpunk-jam
+          ITCH_GAME: DungeonCrawlerTestPage
           ITCH_USER: PatrickMoffett
           PACKAGE: build/${{ matrix.targetPlatform }}
           VERSION: ${{ env.VERSION }}
