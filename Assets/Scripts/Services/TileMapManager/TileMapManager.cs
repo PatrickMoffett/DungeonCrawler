@@ -37,7 +37,7 @@ public class TileMapManager : IService
         }
         else
         {
-            Debug.LogError("Tilemap object not found in the scene.");
+            Debug.LogWarning("Tilemap object not found in the scene.");
         }
     }
 
