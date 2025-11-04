@@ -15,7 +15,7 @@ public class UIMainMenu : MonoBehaviour
     public void OnStartClicked()
     {
         ServiceLocator.Instance.Get<LevelSceneManager>().LoadNextLevel();
-        ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<CutsceneState>();
+        ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<GameState>();
     }
 
     public void OnSettingsClicked()
