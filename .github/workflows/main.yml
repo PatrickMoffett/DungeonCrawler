@@ -39,7 +39,7 @@ jobs:
           dotnet: true
           haskell: true
           large-packages: true
-          docker-images: true
+          docker-images: false
           swap-storage: true
       - uses: actions/checkout@v3
         with:

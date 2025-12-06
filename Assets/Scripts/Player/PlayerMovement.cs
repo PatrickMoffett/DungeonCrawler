@@ -37,15 +37,11 @@ public class PlayerMovement : MonoBehaviour
             || (v.x > 0f && _inputDirection.x < 0f)
             || (v.x < 0f && _inputDirection.x > 0f))
         {
-            Debug.Log("DampendingX");
             var brake = dampening * dt;
             float newSpeed = Mathf.MoveTowards(v.x, 0f, brake);
             v.x = newSpeed;
         }
-        else
-        {
-            Debug.Log("Not DampendingX");
-        }
+
         if (Mathf.Approximately(_inputDirection.y,0f)
             || (v.y > 0f && _inputDirection.y < 0f)
             || (v.y < 0f && _inputDirection.y > 0f))
@@ -65,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
     
     public void SetMoveInput(Vector2 moveDirection)
     {
-        Debug.Log("SetMoveInput: " + moveDirection.x);
         _inputDirection = moveDirection;  
     }
 }
