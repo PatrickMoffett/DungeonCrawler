@@ -37,7 +37,7 @@ public static class Bootstrapper
 #if UNITY_EDITOR
         int currentLevelIndex = ServiceLocator.Instance.Get<LevelSceneManager>().GetLevelIndex();
         if (currentLevelIndex == 0) return;
-        ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<GameState>();
+        ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<DungeonModeState>();
 #endif
     }
 }

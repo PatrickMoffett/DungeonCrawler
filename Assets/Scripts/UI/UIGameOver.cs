@@ -13,7 +13,7 @@ namespace UI
         }
         public void RetryClicked()
         {
-            ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<GameState>(true);
+            ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<DungeonModeState>(true);
         }
     }
 }

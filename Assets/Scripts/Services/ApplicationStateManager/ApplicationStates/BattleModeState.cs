@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;
 
 namespace Services
 {
-    public class GameState : BaseApplicationState
+    public class BattleModeState : BaseApplicationState
     {
-        public readonly string UI_PREFAB = UIPrefabs.UIGame;
+        public readonly string UI_PREFAB = UIPrefabs.UIBattleMode;
 
         private UIWidget _uiWidget;
 
-        private int _levelIndex = (int)Constants.SceneIndexes.GAME_SCENE;
+        private int _levelIndex = (int)Constants.SceneIndexes.BATTLE_SCENE;
 
-        public GameState()
+        public BattleModeState()
         {
 
         }
@@ -44,7 +44,7 @@ namespace Services
             ServiceLocator.Instance.Get<LevelSceneManager>().LevelLoaded += FinishStateSetup;
 #if UNITY_EDITOR
             //don't load the next level if we're testing out a level in the editor
-            // and we didn't launch the gamestate from the initial/menu scene (which should be index 0)
+            // and we didn't launch the BattleState from the initial/menu scene (which should be index 0)
             int currentLevelIndex = ServiceLocator.Instance.Get<LevelSceneManager>().GetLevelIndex();
             if (currentLevelIndex != _levelIndex)
             {

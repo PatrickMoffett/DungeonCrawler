@@ -7,7 +7,8 @@
     public static class UIPrefabs
     {
         public const string UIRoot = "UIRoot";
-        public const string UIGame = "UIGame";
+        public const string UIDungeonMode = "UIDungeonMode";
+        public const string UIBattleMode = "UIBattleMode";
         public const string UIMainMenu = "UIMainMenu";
         public const string UIPauseMenu = "UIPauseMenu";
         public const string UISettings = "UISettings";

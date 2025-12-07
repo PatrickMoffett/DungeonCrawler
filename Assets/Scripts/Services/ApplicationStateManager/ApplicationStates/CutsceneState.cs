@@ -31,7 +31,7 @@ namespace Services
         {
             ServiceLocator.Instance.Get<DialogueSystem>().OnDialogueEnd -= OnDialogueEnded;
             ServiceLocator.Instance.Get<LevelSceneManager>().LoadNextLevel();
-            ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<GameState>(true);
+            ServiceLocator.Instance.Get<ApplicationStateManager>().PushState<DungeonModeState>(true);
         }
 
         protected override void SetupStateInBackground(StackStateMachineBaseState prevState, Dictionary<string, object> options)

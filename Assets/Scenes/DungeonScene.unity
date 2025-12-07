@@ -132,7 +132,9 @@ GameObject:
   - component: {fileID: 1232449466}
   - component: {fileID: 1232449465}
   - component: {fileID: 1232449464}
+  - component: {fileID: 1232449469}
   - component: {fileID: 1232449463}
+  - component: {fileID: 1232449470}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -273,12 +275,39 @@ Transform:
   m_GameObject: {fileID: 1232449462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.38, y: 1.8, z: 0}
+  m_LocalPosition: {x: -2.84, y: 1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1232449469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232449462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82f883a018f4b2e88bd5d912461aa5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.BattleStarter
+  distancePerProc: 2
+  chancePerProc: 0.5
+--- !u!114 &1232449470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232449462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427e21ea2ce04a52a678f3d29b7b43ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prototyping.LocationLoader
+  saveKey: Player_Position
 --- !u!1 &1346159239
 GameObject:
   m_ObjectHideFlags: 0
