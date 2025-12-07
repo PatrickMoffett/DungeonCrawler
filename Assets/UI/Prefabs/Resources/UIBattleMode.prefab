@@ -430,6 +430,22 @@ PrefabInstance:
       propertyPath: m_text
       value: Skill
       objectReference: {fileID: 0}
+    - target: {fileID: 6665350568829842754, guid: 309b2b26d2d284047a3acc3892ac9ad4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 6665350568829842754, guid: 309b2b26d2d284047a3acc3892ac9ad4, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 6665350568829842754, guid: 309b2b26d2d284047a3acc3892ac9ad4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856378352600920175, guid: 309b2b26d2d284047a3acc3892ac9ad4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     - target: {fileID: 8126275801657161556, guid: 309b2b26d2d284047a3acc3892ac9ad4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -536,6 +552,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2836984364472492651}
+    - target: {fileID: 7856378352600920175, guid: 309b2b26d2d284047a3acc3892ac9ad4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8126275801657161556, guid: 309b2b26d2d284047a3acc3892ac9ad4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
